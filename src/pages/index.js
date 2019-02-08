@@ -31,9 +31,11 @@ export default class IndexPage extends React.Component {
                   </p>
                   <p>
                     {post.excerpt}
-                    <br />
-                    <br />
-                    <Link className="button is-small" to={post.fields.slug}>
+                    <Link 
+                    className="button is-small" 
+                    to={post.fields.slug}
+                    style={{ display: 'block', marginTop: '20px' }}
+                    >
                       Keep Reading →
                     </Link>
                   </p>
